@@ -17,7 +17,7 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Please enter product description'],
     },
-    rating: {
+    ratings: {
         type: Number,
         required: [true, 'Please enter product name'],
         default: 0
@@ -41,7 +41,7 @@ const productSchema = new mongoose.Schema({
             values: [
                 'Electronics',
                 'Cameras',
-                'Laptop',
+                'Laptops',
                 'Accessories',
                 'Headphones',
                 'Food',
@@ -85,6 +85,11 @@ const productSchema = new mongoose.Schema({
             },
         }
     ],
+    user: {
+        type: mongoose.Schema.ObjectId,
+        ref: 'User',
+        required: true
+    },
     createdAt: {
         type: Date,
         default: Date.now
