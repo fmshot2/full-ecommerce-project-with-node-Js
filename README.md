@@ -1,4 +1,4 @@
-# full-Ecommerce-backend-with-node-js
+# Full-Ecommerce-Backend-With-Node-js
 A full node ecommerce app with filters, search product attributes, pagination and authentication built with Node Js.
 
 All images are stored on Cloudinary.
